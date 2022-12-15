@@ -1,0 +1,37 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=RocknRoll+One&display=swap");
+.Navbar {
+  padding: 0rem 0rem 0rem 2rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-weight: bold;
+  font-size: 1.5rem;
+  background-color: rgb(13, 66, 109);
+}
+.Navbar > a > img {
+  width: 10rem;
+}
+.Navbar > a > h1 {
+  font-family: "RocknRoll One", sans-serif;
+  color: #38b6ff;
+}
+.Navbar > a,
+.Contents > a {
+  text-decoration: none;
+  color: white;
+}
+.Contents {
+  width: 60%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.Menu {
+  background-color: black;
+  color: white;
+}
+@media all and (max-width: 1300px) {
+  .Contents {
+    display: none;
+  }
+}

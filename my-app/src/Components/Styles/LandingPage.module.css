@@ -1,0 +1,38 @@
+.Dashboard {
+  border: 1px solid black;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  background-color: rgb(13, 13, 48);
+  color: white;
+  padding: 2rem 4rem;
+  text-align: left;
+  margin-bottom: 8rem;
+}
+.Dashboard > div > p {
+  font-size: 3rem;
+  font-weight: bolder;
+  margin-bottom: 2rem;
+}
+.Dashboard > div > i {
+  font-size: 1.8rem;
+  font-weight: bolder;
+  margin-bottom: 10rem;
+}
+.Dashboard > div > a > button {
+  margin-top: 4rem;
+  font-size: 1.3rem;
+  padding: 1rem;
+  margin-left: 4rem;
+  cursor: pointer;
+  border-radius: 8px;
+}
+.Dashboard > div > img,
+.Component2 > div > img {
+  width: 100%;
+}
+.Component2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
