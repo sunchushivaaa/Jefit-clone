@@ -1,7 +1,5 @@
+import SubComponent1 from "../Components/SubscriptionPage/SubComponent1";
+
 export default function Subscription() {
-  return (
-    <div className="Subscription">
-      <h1>Subscription Page</h1>
-    </div>
-  );
+  return <SubComponent1 />;
 }

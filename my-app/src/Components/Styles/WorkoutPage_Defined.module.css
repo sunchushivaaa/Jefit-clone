@@ -1,0 +1,23 @@
+.Header {
+  width: 60%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.Header > a > button {
+  padding: 1.5rem;
+  font-size: large;
+  cursor: pointer;
+  border: none;
+  border-radius: 6px;
+  background-color: rgb(18, 77, 126);
+  color: white;
+}
+.WorkoutDivs {
+  border: 1px solid black;
+  width: 80%;
+  margin: auto;
+  height: 500px;
+}
