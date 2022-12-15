@@ -1,0 +1,33 @@
+.SubComponent1 {
+  text-align: center;
+}
+.SubComponent1 > h1 {
+  margin-bottom: 3rem;
+}
+.SubscriptionDiv {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.SubscriptionDiv > div {
+  background-color: white;
+  padding: 4rem 3rem 2rem 3rem;
+  border-radius: 10px;
+}
+.SubscriptionDiv > div > h2 + p {
+  color: grey;
+  margin-top: 0.5rem;
+  margin-bottom: 0.8rem;
+}
+.SubscriptionDiv > div > h2 + p ~ p {
+  font-size: 1.2rem;
+  margin-bottom: 0.8rem;
+}
+.SubscriptionDiv > div > a > button {
+  margin-top: 1rem;
+  margin-bottom: 1.2rem;
+  padding: 0.5rem;
+  font-size: medium;
+  cursor: pointer;
+}

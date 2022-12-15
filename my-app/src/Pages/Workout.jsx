@@ -1,7 +1,5 @@
+import DefinedComponent1 from "../Components/WorkoutPage_Defined/DefinedComponent1";
+
 export default function Workout() {
-  return (
-    <div className="Workout">
-      <h1>Workout Page (Defined workouts)</h1>
-    </div>
-  );
+  return <DefinedComponent1 />;
 }

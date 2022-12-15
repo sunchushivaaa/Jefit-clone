@@ -1,0 +1,39 @@
+.Cover {
+  content: "";
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, 0.4);
+}
+.Error {
+  width: 25rem;
+  margin: auto;
+  margin-top: 10rem;
+  margin-bottom: 10rem;
+  text-align: center;
+  background-color: rgb(255, 42, 42);
+  padding: 2rem 0rem;
+  border-radius: 5px;
+}
+.Error > div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+.Error > div > img {
+  margin-right: 1rem;
+}
+.Error > a > button {
+  padding: 0.8rem;
+  font-size: medium;
+  cursor: pointer;
+  border-radius: 3px;
+  border: none;
+  background-color: beige;
+}
