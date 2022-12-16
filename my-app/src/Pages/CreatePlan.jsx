@@ -1,7 +1,5 @@
+import CustomComponent1 from "../Components/WorkoutPage_Custom/CustomComponent1";
+
 export default function CreatePlan() {
-  return (
-    <div className="CreatePlan">
-      <h1>Workout Page (Customized workouts)</h1>
-    </div>
-  );
+  return <CustomComponent1 />;
 }
