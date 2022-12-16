@@ -8,6 +8,7 @@ import Login from "../Pages/Login";
 import Subscription from "../Pages/Subscription";
 import SignIn from "../Pages/Signin";
 import BodyParts from "../Pages/BodyParts";
+import YourPlans from "../Pages/YourPlan";
 
 export default function AllRoutes() {
   return (
@@ -15,6 +16,7 @@ export default function AllRoutes() {
       <Route path="/" element={<Home />} />
       <Route path="/workoutplan" element={<Workout />} />
       <Route path="/workoutplan/createplan" element={<CreatePlan />} />
+      <Route path="/workoutplan/createplan/yourplans" element={<YourPlans />} />
       <Route path="/exercise" element={<Exercise />} />
       <Route path="/excercise/:part" element={<BodyParts />} />
       <Route path="/subscription" element={<Subscription />} />
