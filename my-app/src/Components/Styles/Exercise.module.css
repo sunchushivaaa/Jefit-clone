@@ -1,3 +1,52 @@
-.ExerciseComponent1 {
+.ExerciseComponent1,
+.ExerciseComponent2 {
   text-align: center;
+}
+.ExerciseComponent1 {
+  width: 80%;
+  margin: auto;
+  margin-bottom: 6rem;
+}
+.ExerciseComponent1 > h1 {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+.ExerciseComponent1 > .buttons {
+  width: 50%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.buttons > a > button {
+  padding: 0.8rem 1.5rem;
+  font-size: large;
+  background-color: rgb(13, 66, 109);
+  color: white;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+}
+.buttons > a > button:hover {
+  background-color: rgb(17, 78, 128);
+}
+.ExerciseComponent2 {
+  width: 70%;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.ExerciseComponent2 > div {
+  margin-bottom: 2.5rem;
+}
+.ExerciseComponent2 > div > a > h2 {
+  margin-bottom: 0.5rem;
+}
+.ExerciseComponent2 > div > b {
+  font-size: larger;
+}
+.ExerciseComponent2 > div > p {
+  margin-top: 0.4rem;
+  font-size: medium;
 }
