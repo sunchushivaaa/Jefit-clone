@@ -1,7 +1,7 @@
-import { useContext, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-import { AuthContext } from "../../Contexts/AuthContext";
+// import { AuthContext } from "../../Contexts/AuthContext";
 import styles from "../Styles/Parts.module.css";
 
 export default function PartsComponent1() {
@@ -36,7 +36,7 @@ export default function PartsComponent1() {
         {data.map((el) => {
           return (
             <div key={el.id}>
-              <Link to="/">
+              <Link to={`/exercise/${el.muscle}/detailed`}>
                 <h2>{el.name}</h2>
               </Link>
               <b>{el.difficulty}</b>

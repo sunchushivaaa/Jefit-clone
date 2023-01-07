@@ -6,19 +6,19 @@ export default function ExerciseComponent1() {
     <div className={styles.ExerciseComponent1}>
       <h1>Choose your Muscle</h1>
       <div className={styles.buttons}>
-        <Link to="/excercise/Chest">
+        <Link to="/exercise/Chest">
           <button>Chest</button>
         </Link>
-        <Link to="/excercise/Abs">
+        <Link to="/exercise/Abs">
           <button>Abs</button>
         </Link>
-        <Link to="/excercise/Back">
+        <Link to="/exercise/Back">
           <button>Back</button>
         </Link>
-        <Link to="/excercise/Shoulders">
+        <Link to="/exercise/Shoulders">
           <button>Shoulders</button>
         </Link>
-        <Link to="/excercise/Biceps">
+        <Link to="/exercise/Biceps">
           <button>Biceps</button>
         </Link>
       </div>
