@@ -28,6 +28,7 @@
 }
 .Container2 > div {
   line-height: 2rem;
+  letter-spacing: 1px;
   font-size: large;
   text-align: justify;
 }

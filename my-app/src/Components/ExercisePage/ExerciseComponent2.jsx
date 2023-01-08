@@ -1,6 +1,5 @@
 import { Link } from "react-router-dom";
-import { useContext, useEffect, useState } from "react";
-import { AuthContext } from "../../Contexts/AuthContext";
+import { useEffect, useState } from "react";
 import styles from "../Styles/Exercise.module.css";
 
 export default function ExerciseComponent2() {

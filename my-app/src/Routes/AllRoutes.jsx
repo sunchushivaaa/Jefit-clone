@@ -10,12 +10,14 @@ import SignIn from "../Pages/Signin";
 import BodyParts from "../Pages/BodyParts";
 import YourPlans from "../Pages/YourPlan";
 import Detailed from "../Pages/Detailed";
+import WorkoutDetails from "../Pages/WorkoutDetails";
 
 export default function AllRoutes() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/workoutplan" element={<Workout />} />
+      <Route path="/workoutplan/:id" element={<WorkoutDetails />} />
       <Route path="/workoutplan/createplan" element={<CreatePlan />} />
       <Route path="/workoutplan/createplan/yourplans" element={<YourPlans />} />
       <Route path="/exercise" element={<Exercise />} />
