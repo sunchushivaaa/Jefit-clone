@@ -1,7 +1,8 @@
+import Component1 from "../Components/DetailedPage/Component1";
 export default function Detailed() {
   return (
     <div className="Detailed">
-      <h1>Detailed Exercise</h1>
+      <Component1 />
     </div>
   );
 }

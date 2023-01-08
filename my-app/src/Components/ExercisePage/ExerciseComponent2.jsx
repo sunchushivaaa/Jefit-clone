@@ -22,7 +22,7 @@ export default function ExerciseComponent2() {
       {data.map((el) => {
         return (
           <div key={el.id}>
-            <Link to="/">
+            <Link to={`/exercise/${el.muscle}/${el.id}`}>
               <h2>{el.name}</h2>
             </Link>
             <b>{el.muscle}</b>

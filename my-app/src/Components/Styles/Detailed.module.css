@@ -1,0 +1,34 @@
+.Component1 {
+  margin-bottom: 5rem;
+  letter-spacing: 1px;
+}
+.Container1,
+.Container2 {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+}
+.Container1 > div:nth-child(1) {
+  margin-top: 3rem;
+}
+.Container1 > div > p {
+  margin-bottom: 0.5rem;
+  font-size: 1.3rem;
+}
+.Container1 > div:last-child {
+  width: 50%;
+}
+.Container1 > div > video {
+  width: 100%;
+  height: 100%;
+}
+.Container2 > div > h2{
+    margin-bottom: 1.2rem;
+}
+.Container2 > div {
+  line-height: 2rem;
+  font-size: large;
+  text-align: justify;
+}
+

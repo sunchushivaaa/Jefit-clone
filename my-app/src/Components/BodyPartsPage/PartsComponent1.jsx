@@ -36,7 +36,7 @@ export default function PartsComponent1() {
         {data.map((el) => {
           return (
             <div key={el.id}>
-              <Link to={`/exercise/${el.muscle}/detailed`}>
+              <Link to={`/exercise/${el.muscle}/${el.id}`}>
                 <h2>{el.name}</h2>
               </Link>
               <b>{el.difficulty}</b>
