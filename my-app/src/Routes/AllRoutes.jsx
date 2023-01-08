@@ -20,7 +20,7 @@ export default function AllRoutes() {
       <Route path="/workoutplan/createplan/yourplans" element={<YourPlans />} />
       <Route path="/exercise" element={<Exercise />} />
       <Route path="/exercise/:part" element={<BodyParts />} />
-      <Route path="/exercise/:part/detailed" element={<Detailed />} />
+      <Route path="/exercise/:part/:id" element={<Detailed />} />
       <Route path="/subscription" element={<Subscription />} />
       <Route path="/login" element={<Login />} />
       <Route path="/signin" element={<SignIn />} />
