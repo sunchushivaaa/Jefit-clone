@@ -1,5 +1,5 @@
 .Header {
-  width: 60%;
+  width: 80%;
   margin: auto;
   display: flex;
   justify-content: space-between;
@@ -19,8 +19,31 @@
   background-color: rgb(22, 90, 145);
 }
 .WorkoutDivs {
-  border: 1px solid black;
   width: 80%;
   margin: auto;
-  height: 500px;
+}
+.WorkoutDivs {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+.WorkoutDivs > a {
+  text-decoration: none;
+}
+.WorkoutDivs > a > div {
+  background-color: white;
+  text-align: center;
+  padding: 0px 0px 7px 0px;
+  cursor: pointer;
+  color: purple;
+}
+.WorkoutDivs > a > div:hover {
+  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.WorkoutDivs > a > div > p {
+  font-size: 1.3rem;
+  padding: 20px 0px;
+}
+.WorkoutDivs > a > div > img {
+  width: 100%;
 }
