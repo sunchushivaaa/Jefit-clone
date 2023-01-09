@@ -47,3 +47,23 @@
 .WorkoutDivs > a > div > img {
   width: 100%;
 }
+.Detailed1 {
+  width: 80%;
+  margin: auto;
+}
+.Detailed1 > h1 {
+  text-align: center;
+  margin-bottom: 2.5rem;
+}
+.Detailed1 > .Description > p {
+  text-align: justify;
+  margin-bottom: 0.8rem;
+  font-size: 1.2rem;
+  line-height: 2rem;
+  letter-spacing: 1px;
+}
+.Detailed1 > .Description > p > button {
+  font-size: medium;
+  padding: 4px 8px;
+  cursor: pointer;
+}

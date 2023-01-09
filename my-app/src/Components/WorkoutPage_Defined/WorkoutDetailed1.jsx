@@ -3,7 +3,7 @@ import { useContext, useEffect, useState } from "react";
 import { Link, useParams } from "react-router-dom";
 import { AuthContext } from "../Contexts/AuthContext";
 export default function WorkoutDetailed1() {
-  const { login, setLogin } = useContext(AuthContext);
+  const { login } = useContext(AuthContext);
   const { id } = useParams();
   const [data, setData] = useState({});
   useEffect(() => {
@@ -20,7 +20,7 @@ export default function WorkoutDetailed1() {
     return (
       <div className={styles.Detailed1}>
         <h1>{data.name}</h1>
-        <div>
+        <div className={styles.Description}>
           <p>
             <b>Type :-</b> {data.type}
           </p>
@@ -42,6 +42,41 @@ export default function WorkoutDetailed1() {
               <Link to="/login">Login first</Link>
             )}
           </p>
+        </div>
+        <div className={styles.Workouts}>
+          {data.workouts.map((el) => {
+            for (let x in el) {
+              return (
+                <div>
+                  <h2>{x}</h2>
+                  <p>
+                    <b>Name :-</b> {el.Name}
+                  </p>
+                  <p>
+                    <b>Muscle :-</b> {el.Muscle}
+                  </p>
+                  <p>
+                    <b>Timer :-</b> {el.Timer}
+                  </p>
+                  <p>
+                    <b>Sets :-</b> {el.Sets}
+                  </p>
+                  <p>
+                    <b>Completed :-</b>{" "}
+                    {login ? (
+                      data.completed ? (
+                        "Completed"
+                      ) : (
+                        <button>Done</button>
+                      )
+                    ) : (
+                      <Link to="/login">Login first</Link>
+                    )}
+                  </p>
+                </div>
+              );
+            }
+          })}
         </div>
       </div>
     );
