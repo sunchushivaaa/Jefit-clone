@@ -38,15 +38,15 @@
   align-items: center;
 }
 .ExerciseComponent2 > div {
-  margin-bottom: 2.5rem;
+  margin-bottom: 3rem;
 }
 .ExerciseComponent2 > div > a > h2 {
   margin-bottom: 0.5rem;
+  color: indigo;
 }
 .ExerciseComponent2 > div > b {
   font-size: larger;
 }
 .ExerciseComponent2 > div > p {
-  margin-top: 0.4rem;
   font-size: medium;
 }

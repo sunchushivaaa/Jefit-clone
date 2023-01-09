@@ -1,3 +1,36 @@
 .PartsComponent1 {
-  border: 1px solid black;
+  width: 80%;
+  margin: auto;
+}
+.header {
+  display: flex;
+  margin-bottom: 4rem;
+}
+.header > h1 {
+  margin-left: 40%;
+}
+.header > a > button {
+  font-size: medium;
+  padding: 10px;
+  cursor: pointer;
+}
+.exercises {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  text-align: center;
+}
+.exercises > div {
+  background-color: white;
+  padding: 2rem;
+}
+.exercises > div > a {
+  color: purple;
+  /* text-decoration: none; */
+}
+.exercises > div > a > h2 {
+  margin-bottom: 8px;
+}
+.exercises > div > p {
+  margin-top: 2px;
 }
