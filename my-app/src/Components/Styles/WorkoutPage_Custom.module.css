@@ -13,14 +13,14 @@
   border: none;
   border-radius: 6px;
   background-color: #38b6ff;
-  font-weight: 500;
+  font-weight: 600;
   color: white;
 }
 .Header > a > button:hover {
   background-color: #3cb0f3;
 }
 .WorkoutDivs {
-  border: 1px solid black;
+  
   width: 80%;
   margin: auto;
   height: 500px;

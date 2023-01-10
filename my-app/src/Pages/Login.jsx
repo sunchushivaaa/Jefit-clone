@@ -47,7 +47,7 @@ export default function Login() {
   return (
     <div className={styles.Login}>
       <h1>Enter Credentials</h1>
-      <form onSubmit={(e) => submitHandler(e)}>
+      <form className={styles.LoginForm} onSubmit={(e) => submitHandler(e)}>
         <input
           onChange={(e) => inputHandler(e)}
           name="email"
