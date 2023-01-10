@@ -1,6 +1,9 @@
 import styles from "../Styles/Subscription.module.css";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../Contexts/AuthContext";
+import { useContext } from "react";
 export default function SubComponent1() {
+  const { login } = useContext(AuthContext);
   return (
     <div className={styles.SubComponent1}>
       <h1>Plans that suit you best</h1>
@@ -14,7 +17,7 @@ export default function SubComponent1() {
           <p>1400+ exercises library</p>
           <p>Body stats tracking tools</p>
           <p>Support interval training</p>
-          <Link to="/login">
+          <Link to={login ? "/" : "/login"}>
             <button>Free</button>
           </Link>
         </div>
@@ -30,7 +33,7 @@ export default function SubComponent1() {
           <p>Exercise tips from JEFIT experts</p>
           <p>Premium workout plans</p>
           <p>& More...</p>
-          <Link to="/login">
+          <Link to={login ? "/" : "/login"}>
             <button>Get Elite</button>
           </Link>
         </div>
@@ -46,7 +49,7 @@ export default function SubComponent1() {
           <p>Exercise tips from JEFIT experts</p>
           <p>Premium workout plans</p>
           <p>& More...</p>
-          <Link to="/login">
+          <Link to={login ? "/" : "/login"}>
             <button>Get Elite</button>
           </Link>
         </div>

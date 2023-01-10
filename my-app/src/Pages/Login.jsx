@@ -46,6 +46,9 @@ export default function Login() {
   };
   return (
     <div className={styles.Login}>
+      <button onClick={() => setLogin(!login)}>
+        {login ? "Logout" : "Login"}
+      </button>
       <h1>Enter Credentials</h1>
       <form className={styles.LoginForm} onSubmit={(e) => submitHandler(e)}>
         <input
