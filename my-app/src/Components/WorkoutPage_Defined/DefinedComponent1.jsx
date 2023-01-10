@@ -25,7 +25,7 @@ export default function DefinedComponent1() {
         {data?.map((el) => {
           return (
             <Link key={el.id} to={`/workoutplan/${el.id}`}>
-              <div>
+              <div key={el.id}>
                 <img src={el.photo} alt={el.name} />
                 <p>{el.name}</p>
               </div>

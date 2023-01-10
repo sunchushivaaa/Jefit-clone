@@ -35,7 +35,7 @@ export default function SignIn() {
   return (
     <div className={styles.Signin}>
       <h1>Fill in Your Details</h1>
-      <form onSubmit={(e) => submitHandler(e)}>
+      <form className={styles.SigninForm} onSubmit={(e) => submitHandler(e)}>
         <input
           onChange={(e) => inputHandler(e)}
           name="name"

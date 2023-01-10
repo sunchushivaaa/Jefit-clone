@@ -67,3 +67,25 @@
   padding: 4px 8px;
   cursor: pointer;
 }
+.head {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+table {
+  width: 100%;
+}
+table > thead > tr > td {
+  font-weight: bold;
+  font-size: large;
+  text-align: center;
+  padding: 1rem;
+  color: white;
+  background-color: rgb(13, 66, 109);
+}
+table > tbody > tr > td {
+  text-align: center;
+  padding: 1rem;
+  background-color: white;
+}

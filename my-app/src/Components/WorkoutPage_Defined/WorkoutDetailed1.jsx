@@ -16,6 +16,53 @@ export default function WorkoutDetailed1() {
     const response = await request.json();
     setData(response);
   };
+  const mapData = (e) => {
+    for (let x in e.workouts) {
+      return (
+        <>
+          <p className={styles.head}>{x} : -</p>
+          <table>
+            <thead>
+              <tr>
+                <td>Name</td>
+                <td>Muscle</td>
+                <td>Timer</td>
+                <td>Reps</td>
+                <td>Sets</td>
+                <td>Track</td>
+                <td>Completed</td>
+              </tr>
+            </thead>
+            {e.workouts[x].map((el, i) => {
+              return (
+                <tbody>
+                  <tr>
+                    <td>{el.Name}</td>
+                    <td>{el.Muscle}</td>
+                    <td>{el.Timer}</td>
+                    <td>{el.Reps}</td>
+                    <td>{el.Sets}</td>
+                    <td>Track</td>
+                    <td>
+                      {login ? (
+                        data.completed ? (
+                          "Completed"
+                        ) : (
+                          <button>Done</button>
+                        )
+                      ) : (
+                        <Link to="/login">Login first</Link>
+                      )}
+                    </td>
+                  </tr>
+                </tbody>
+              );
+            })}
+          </table>
+        </>
+      );
+    }
+  };
   if (data.name) {
     return (
       <div className={styles.Detailed1}>
@@ -43,42 +90,40 @@ export default function WorkoutDetailed1() {
             )}
           </p>
         </div>
-        <div className={styles.Workouts}>
-          {data.workouts.map((el) => {
-            for (let x in el) {
-              return (
-                <div>
-                  <h2>{x}</h2>
-                  <p>
-                    <b>Name :-</b> {el.Name}
-                  </p>
-                  <p>
-                    <b>Muscle :-</b> {el.Muscle}
-                  </p>
-                  <p>
-                    <b>Timer :-</b> {el.Timer}
-                  </p>
-                  <p>
-                    <b>Sets :-</b> {el.Sets}
-                  </p>
-                  <p>
-                    <b>Completed :-</b>{" "}
-                    {login ? (
-                      data.completed ? (
-                        "Completed"
-                      ) : (
-                        <button>Done</button>
-                      )
-                    ) : (
-                      <Link to="/login">Login first</Link>
-                    )}
-                  </p>
-                </div>
-              );
-            }
-          })}
-        </div>
+        <div className={styles.Workouts}>{mapData(data)}</div>
       </div>
     );
   }
+  // <div key={i}>
+  //               <p>
+  //                 <b>Name :-</b> {el.Name}
+  //               </p>
+  //               <p>
+  //                 <b>Muscle :-</b> {el.Muscle}
+  //               </p>
+  //               <p>
+  //                 <b>Timer :-</b> {el.Timer}
+  //               </p>
+  //               <p>
+  //                 <b>Reps :-</b> {el.Reps}
+  //               </p>
+  //               <p>
+  //                 <b>Sets :-</b> {el.Sets}
+  //               </p>
+  //               <p>
+  //                 <b>Track :-</b> track
+  //               </p>
+  //               <p>
+  //                 <b>Completed :-</b>{" "}
+  //                 {login ? (
+  //                   data.completed ? (
+  //                     "Completed"
+  //                   ) : (
+  //                     <button>Done</button>
+  //                   )
+  //                 ) : (
+  //                   <Link to="/login">Login first</Link>
+  //                 )}
+  //               </p>
+  //             </div>
 }
