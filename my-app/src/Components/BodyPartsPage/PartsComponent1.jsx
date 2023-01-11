@@ -1,7 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import { Link } from "react-router-dom";
-// import { AuthContext } from "../../Contexts/AuthContext";
 import styles from "../Styles/Parts.module.css";
 
 export default function PartsComponent1() {
@@ -26,7 +25,6 @@ export default function PartsComponent1() {
     <div className={styles.PartsComponent1}>
       <div className={styles.header}>
         <Link to="/exercise">
-          {" "}
           <button>Exercises</button>
         </Link>
         <h1>{part}</h1>

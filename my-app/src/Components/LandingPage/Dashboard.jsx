@@ -11,7 +11,6 @@ export default function Dashboard() {
           <button>Login</button>
         </Link>
         <Link to="/signin">
-          {" "}
           <button>Sign up</button>
         </Link>
       </div>

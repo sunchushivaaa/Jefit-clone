@@ -94,36 +94,4 @@ export default function WorkoutDetailed1() {
       </div>
     );
   }
-  // <div key={i}>
-  //               <p>
-  //                 <b>Name :-</b> {el.Name}
-  //               </p>
-  //               <p>
-  //                 <b>Muscle :-</b> {el.Muscle}
-  //               </p>
-  //               <p>
-  //                 <b>Timer :-</b> {el.Timer}
-  //               </p>
-  //               <p>
-  //                 <b>Reps :-</b> {el.Reps}
-  //               </p>
-  //               <p>
-  //                 <b>Sets :-</b> {el.Sets}
-  //               </p>
-  //               <p>
-  //                 <b>Track :-</b> track
-  //               </p>
-  //               <p>
-  //                 <b>Completed :-</b>{" "}
-  //                 {login ? (
-  //                   data.completed ? (
-  //                     "Completed"
-  //                   ) : (
-  //                     <button>Done</button>
-  //                   )
-  //                 ) : (
-  //                   <Link to="/login">Login first</Link>
-  //                 )}
-  //               </p>
-  //             </div>
 }
