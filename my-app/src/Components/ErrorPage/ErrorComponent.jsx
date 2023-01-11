@@ -10,7 +10,6 @@ export default function ErrorComponent() {
           <h1>Error 404!</h1>
         </div>
         <Link to="/">
-          {" "}
           <button>Go back</button>
         </Link>
       </div>

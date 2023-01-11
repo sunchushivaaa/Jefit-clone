@@ -11,14 +11,6 @@ export default function Component2() {
           alt="tracking-illustration"
         />
       </div>
-      <div>
-        <p>WORKOUT TRACKING</p>
-        <h2>PERSONALIZE YOUR WORKOUT PLANS</h2>
-        <img src={image} alt="checkmark-logo" style={{ width: "10%" }} />
-        <Link to="/login">
-          <button>JOIN NOW</button>
-        </Link>
-      </div>
     </div>
   );
 }
